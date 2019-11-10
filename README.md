@@ -29,4 +29,5 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 ## References
 
-* 
+* Reactive Extensions for Ruby: https://github.com/ReactiveX/RxRuby
+* Ruby EventMachine: https://github.com/eventmachine/eventmachine
