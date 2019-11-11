@@ -22,7 +22,9 @@ module ReactiveStreams
   class Subscriber
 
     def initialize(&block)
-      self.instance_eval(&block)
+      if block_given?
+        self.instance_eval(&block)
+      end
     end
 
     #@param subscription [ReactiveStreams::Subscription]
