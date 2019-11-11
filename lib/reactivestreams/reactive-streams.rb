@@ -20,6 +20,11 @@ module ReactiveStreams
   end
 
   class Subscriber
+
+    def initialize(&block)
+      self.instance_eval(&block)
+    end
+
     #@param subscription [ReactiveStreams::Subscription]
     def on_subscribe(subscription)
 
@@ -29,6 +34,7 @@ module ReactiveStreams
     end
 
     def on_error(exception)
+
     end
 
     def on_complete
